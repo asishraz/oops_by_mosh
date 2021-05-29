@@ -12,6 +12,8 @@ const car = new Car("lambo", "230kmph");
 const keys = Object.keys(car);
 console.log(keys);
 
+if ("model" in car) console.log("Car has model");
+
 // const model1 = "lamborghini";
 // const model2 = "ferrari";
 
