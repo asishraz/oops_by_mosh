@@ -1,15 +1,25 @@
-function Person(name, lname, gender) {
+function Person(name, lname) {
   this.name = name;
   this.lname = lname;
-  this.gender = gender;
 
-  let age = 23;
+  let age = 27;
 
-  this.showDetails = function () {
-    console.log(name + lname + " is " + gender);
+  this.showPerson = function () {
+    console.log(name + lname);
   };
+  Object.defineProperty(this, "age", {
+    get: function () {
+      return age;
+    },
+
+    set: function (value) {
+      if (!value) throw new Error("Invalid age");
+      age = value;
+    },
+  });
 }
 
-const person = new Person("gareeb", "coder", "male");
+const person = new Person("asish", "raz");
 
-person.showDetails();
+person.showPerson();
+person.age = 29;
