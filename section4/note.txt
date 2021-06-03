@@ -1,0 +1,8 @@
+Section 4 all the exercises needs to be done
+Following topics which needs revision:
+
+* Object.create()
+* prototypical inheritance
+* Protoype creation and its methodology
+* 2 question in the section 4
+* Revision of Intermediate Function inheritance and Polymorphism
