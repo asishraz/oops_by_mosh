@@ -10,7 +10,20 @@ class Circle {
 
   // * this is static method, which is available on the class itself and not like instance
   // !  we use the keyword static
-  static parse(str) {}
+  static parse(str) {
+    const radius = JSON.parse(str).radius;
+    return new Circle(radius);
+  }
 }
 
-const circle = new Circle(1);
+const circle = Circle.parse('{"radius": 1}');
+// console.log(circle);
+
+// ! for calling static method, we don't need to call the instance of the class
+
+class Math2 {
+  static abs(value) {
+    // * some logic
+  }
+}
+

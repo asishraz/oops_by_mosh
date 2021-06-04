@@ -9,5 +9,5 @@ const Circle = function () {
 const c = new Circle();
 c.draw();
 
-const xyz = c.draw;
-console.log(xyz);
+const draw = new c.draw();
+draw();
