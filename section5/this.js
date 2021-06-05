@@ -1,4 +1,6 @@
-//* use of this keyword
+// * use of this keyword
+
+// "use strict";
 
 const Circle = function () {
   this.draw = function () {
@@ -7,7 +9,11 @@ const Circle = function () {
 };
 
 const c = new Circle();
-c.draw();
 
-const draw = new c.draw();
-draw();
+const d = c.draw;
+
+//? this is method calling
+// c.draw();
+
+//? this is function calling
+d(); //! this will point to the global object

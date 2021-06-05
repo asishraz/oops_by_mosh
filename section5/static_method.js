@@ -26,4 +26,3 @@ class Math2 {
     // * some logic
   }
 }
-
